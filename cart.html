@@ -1548,33 +1548,39 @@
   document.getElementById("ordervalue").textContent = "Rs." + c;
 
   var d = 148;
-  var e = 148 + c;
+  
 
-  document.getElementById("total").textContent = "Rs." + e;
+ 
 
 
 
 
   function add() {
     var a = document.getElementById("coupon").value;
-    var b = "kanha30";
+    var b = "kanh30";
     var succ = document.getElementById("succ");
     succ.width = "300px";
 
 
     var m = document.createElement("p");
-    m.textContent = "Coupon Code Applied!10%OFF";
+    m.textContent = "Coupon Code Applied!30%OFF";
     m.style.color = "green";
     var n = document.createElement("p");
     n.textContent = "Invalid Coupon Code!";
     n.style.color = "red";
 
+     
 
     if (a == b) {
+      var perc = c/100*30
+      var e = 148 + c-perc;
       alert("Coupon Code Applied Successfully");
+      document.getElementById("total").textContent = "Rs." + e;
       succ.append(m);
     } else {
+      var e = 148 + c;
       alert("Invalid Coupon Code");
+        document.getElementById("total").textContent = "Rs." + e;
       succ.append(n);
     }
 
