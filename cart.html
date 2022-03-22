@@ -1509,7 +1509,7 @@
     img.setAttribute('class','product_image');
 
     let prod_price = document.createElement("p");
-    prod_price.textContent = "$"+" "+product.price;
+    prod_price.textContent = "Rs"+" "+product.price;
     prod_price.style.color = "red";
     prod_price.style.padding ="20px";
 
@@ -1543,7 +1543,7 @@
   c = 0;
   for (i = 0; i < cart.length; i++) {
     n = Number(cart[i].price);
-    c += Math.ceil(n) * 70;
+    c += Math.ceil(n);
   }
   document.getElementById("ordervalue").textContent = "Rs." + c;
 
@@ -1557,7 +1557,7 @@
 
   function add() {
     var a = document.getElementById("coupon").value;
-    var b = "masai30";
+    var b = "kanha30";
     var succ = document.getElementById("succ");
     succ.width = "300px";
 
