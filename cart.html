@@ -1548,10 +1548,10 @@
   document.getElementById("ordervalue").textContent = "Rs." + c;
 
   var d = 148;
-  
+  var e = 148 + c
 
  
-
+ document.getElementById("total").textContent = "Rs." + e;
 
 
 
@@ -1569,18 +1569,18 @@
     n.textContent = "Invalid Coupon Code!";
     n.style.color = "red";
 
-     document.getElementById("total").textContent = "Rs." + e;
+    
 
     if (a == b) {
-      var perc = c/100*30
-      var e = 148 + c-perc;
+      
+      
       alert("Coupon Code Applied Successfully");
       
       succ.append(m);
     } else {
-      var e = 148 + c;
+      
       alert("Invalid Coupon Code");
-        document.getElementById("total").textContent = "Rs." + e;
+        
       succ.append(n);
     }
 
