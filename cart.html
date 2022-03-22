@@ -1569,13 +1569,13 @@
     n.textContent = "Invalid Coupon Code!";
     n.style.color = "red";
 
-     
+     document.getElementById("total").textContent = "Rs." + e;
 
     if (a == b) {
       var perc = c/100*30
       var e = 148 + c-perc;
       alert("Coupon Code Applied Successfully");
-      document.getElementById("total").textContent = "Rs." + e;
+      
       succ.append(m);
     } else {
       var e = 148 + c;
