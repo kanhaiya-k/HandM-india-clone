@@ -570,7 +570,7 @@
         h3.textContent = title;
 
         let h4 = document.createElement("h4");
-        let pr = Math.ceil(+item.price * 70);
+        let pr = Math.ceil(+item.price );
         h4.innerHTML = `Rs. ${pr}`;
 
         right_bar.prepend(h3, h4);
